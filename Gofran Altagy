@@ -1,0 +1,26 @@
+    #include <iostream>
+    using namespace std;
+
+    // دالة تجمع رقمين
+    int addNumbers(int a, int b) {
+        return a + b;
+    }
+
+    // كود الاختبار
+    void testAddNumbers() {
+        int num1 = 3;
+        int num2 = 2;
+        int expected = 5;
+        int result = addNumbers(num1, num2);
+        if (result == expected) {
+            cout << "Test passed: " << num1 << " + " << num2 << " = " << result << endl;
+        } else {
+            cout << "Test failed: " << num1 << " + " << num2 << " = " << result << ", expected " << expected << endl;
+        }
+    }
+
+    int main() {
+        testAddNumbers();
+        return 0;
+    }
+
