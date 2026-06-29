@@ -1,0 +1,25 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: #f0f0f0; direction: rtl; min-height: 100vh; }
+header { background: #1428a0; color: #fff; padding: 20px; text-align: center; }
+header nav ul { list-style: none; padding: 0; margin-top: 15px; }
+header nav ul li { display: inline; margin: 0 10px; }
+header nav ul li a { color: #fff; text-decoration: none; padding: 8px 15px; border-radius: 5px; font-weight: bold; }
+header nav ul li a.active, header nav ul li a:hover { background: rgba(255,255,255,0.2); }
+section { padding: 25px; margin: 30px auto; background: #fff; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); max-width: 500px; }
+section.login { background: #1abc9c; }
+section.contact { background: #2980b9; }
+h2 { text-align: center; color: #fff; margin-bottom: 20px; }
+section.home h2, section.home p { color: #1428a0; }
+form input, form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; }
+form input:focus, form textarea:focus { border-color: #1428a0; outline: none; }
+form button { width: 100%; padding: 12px; color: white; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; font-weight: bold; }
+button.login-btn { background: #9b59b6; }
+button.contact-btn { background: #c0392b; }
+button:hover { opacity: 0.9; }
+p { color: #333; line-height: 1.8; font-size: 17px; text-align: center; }
+a { color: #1428a0; text-decoration: none; }
+a:hover { text-decoration: underline; }
+@media (max-width: 768px) { 
+  header nav ul li { display: block; margin: 10px 0; }
+  section { margin: 20px 10px; }
+}
