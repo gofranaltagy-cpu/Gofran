@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سامسونج - تسجيل الدخول</title>
+  <style>
+    /* نفس التصميم السابق */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>تسجيل الدخول</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a> | 
+      <a href="contact.html">تواصل معنا</a> | 
+      <a href="login.html">تسجيل الدخول</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h2>تسجيل الدخول</h2>
+    <form>
+      <label for="username">اسم المستخدم:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">كلمة المرور:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button type="submit" class="btn" onclick="login()">تسجيل الدخول</button>
+    </form>
+  </div>
+  
+  <footer>
+    <p>&copy; 2024 شركة سامسونج. جميع الحقوق محفوظة.</p>
+  </footer>
+  
+  <script>
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      if (username === "admin" && password === "123") {
+        alert("تم تسجيل الدخول بنجاح!");
+        window.location.href = "dashboard.html"; // إعادة التوجيه إلى صفحة dashboard.html
+      } else {
+        alert("اسم المستخدم أو كلمة المرور غير صحيحة!");
+      }
+    }
+  </script>
+</body>
+</html>
