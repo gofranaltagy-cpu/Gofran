@@ -1,0 +1,77 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7; /* لون خلفية فاتح */
+}
+
+header {
+  background: linear-gradient(90deg, #3498db, #2ecc71); /* لون خلفية خضراء وزرقاء */
+  color: #fff; /* لون النص أبيض */
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff; /* لون خلفية أبيض */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2ecc71; /* لون العنوان خضراء */
+  border-bottom: 2px solid #3498db; /* لون الخط تحت العنوان خضراء */
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee; /* لون الخط الفاصل بين العناصر رمادي فاتح */
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+a {
+  color: #3498db; /* لون الروابط خضراء */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2ecc71; /* لون خلفية خضراء */
+  color: #fff; /* لون النص أبيض */
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #3498db; /* لون الزر خضراء */
+  color: #fff; /* لون النص أبيض */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2ecc71; /* لون الزر عند المرور عليه خضراء غامقة */
+}
